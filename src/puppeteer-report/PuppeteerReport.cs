@@ -16,7 +16,7 @@ namespace PuppeteerReportCsharp
             return await reader.ReadToEndAsync();
         }
 
-        public async Task<byte[]> PDFPage(Page page, PdfOptions? options)
+        public async Task<byte[]> PDFPage(IPage page, PdfOptions? options)
         {
             var coreJS = await GetReortCoreJS();
 
@@ -48,7 +48,7 @@ namespace PuppeteerReportCsharp
             return resultByte;
         }
 
-        public async Task PDFPage(Page page, string outputFile, PdfOptions? options)
+        public async Task PDFPage(IPage page, string outputFile, PdfOptions? options)
         {
             var result = await PDFPage(page, options);
             await File.WriteAllBytesAsync(outputFile, result);

@@ -12,7 +12,7 @@
     <PackageTags>report pdf html htmlToPDF html-to-pdf</PackageTags>
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <Version>3.0.2</Version>
+    <Version>3.0.2-fork</Version>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 

@@ -1,3 +1,10 @@
+# Apana fork
+
+To publish the repo, create a PAT on github with the packages read and write rights.
+Setup the github username and PAT in the `nuget.config` file
+Then bump version in .csproj and run: `dotnet pack -c Release` and `dotnet nuget push "./src/puppeteer-report/bin/Release/puppeteer-report.3.0.2-fork.nupkg" --source github` (change the new version). That's it
+
+
 # Puppeteer Report
 
 Puppeteer Report is another library for converting HTML to PDF using puppeteer, adding support of custom header, footer, and pagination.
